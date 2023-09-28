@@ -30,7 +30,7 @@ class Network {
             return decoderData
         } catch {
             throw networkError.InvalidData
-        }        
+        }
     }
 }
 
