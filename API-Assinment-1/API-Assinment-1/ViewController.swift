@@ -114,12 +114,23 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
         
-        let idNation = viewModel.population.data[indexPath.row]
+        let data = viewModel.population.data[indexPath.row]
         
-        cell.textLabel?.text = idNation.idNation
-        cell.detailTextLabel?.text = idNation.nation
+        cell.textLabel?.text = data.idNation
+        cell.detailTextLabel?.text = data.nation
         
         return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailsViewController;
+        let data = viewModel.population.data[indexPath.row]
+
+        vc?.idNationStr = data.idNation
+        vc?.nationStr = data.nation
+        navigationController?.pushViewController(vc!, animated: true)
     }
     
 }

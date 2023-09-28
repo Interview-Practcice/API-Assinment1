@@ -69,6 +69,50 @@
             </objects>
             <point key="canvasLocation" x="1038.9312977099237" y="-23.239436619718312"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="5hw-mg-Asz">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="v9W-f3-6UA" customClass="DetailsViewController" customModule="API_Assinment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lg6-dK-Vc6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1Lk-W8-z5L">
+                                <rect key="frame" x="0.0" y="159" width="393" height="40.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YQ-5i-BSK">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0L8-Yd-cee">
+                                        <rect key="frame" x="0.0" y="20.333333333333343" width="393" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ufZ-fd-1EE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Lk-W8-z5L" firstAttribute="leading" secondItem="ufZ-fd-1EE" secondAttribute="leading" id="MuO-dP-lCv"/>
+                            <constraint firstItem="ufZ-fd-1EE" firstAttribute="trailing" secondItem="1Lk-W8-z5L" secondAttribute="trailing" id="bJd-9X-rBX"/>
+                            <constraint firstItem="1Lk-W8-z5L" firstAttribute="top" secondItem="ufZ-fd-1EE" secondAttribute="top" constant="100" id="ffK-gb-ePn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4hX-fR-5W0"/>
+                    <connections>
+                        <outlet property="idNation" destination="0L8-Yd-cee" id="bKe-FJ-qFL"/>
+                        <outlet property="nation" destination="2YQ-5i-BSK" id="oDb-28-y2s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQy-99-5Hm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082" y="-23"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dWc-1g-2p4">
             <objects>

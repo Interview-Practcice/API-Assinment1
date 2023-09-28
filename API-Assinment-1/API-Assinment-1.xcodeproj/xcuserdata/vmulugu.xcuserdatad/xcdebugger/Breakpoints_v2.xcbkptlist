@@ -187,6 +187,66 @@
                   endingLineNumber = "49"
                   offsetFromSymbolStart = "53">
                </Location>
+               <Location
+                  uuid = "37EC4B49-317A-436B-80E8-22A76389DB99 - 2b8b52b4fa589f2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for API_Assinment_1.ViewController.retrieveFactData() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  uuid = "37EC4B49-317A-436B-80E8-22A76389DB99 - 151c0f342a45978b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for API_Assinment_1.ViewController.retrieveFactData() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "37EC4B49-317A-436B-80E8-22A76389DB99 - fa32d2279d595a94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for API_Assinment_1.ViewController.retrieveFactData() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  uuid = "37EC4B49-317A-436B-80E8-22A76389DB99 - 61e6926eecde74b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for API_Assinment_1.ViewController.retrieveFactData() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "53">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -194,7 +254,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "75CA9249-BB35-4D09-BABD-03CD9BAFC089"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "API-Assinment-1/ClientApi/Network.swift"
@@ -244,6 +304,21 @@
                   moduleName = "API-Assinment-1"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment1/API-Assinment-1/API-Assinment-1/ClientApi/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "537">
+               </Location>
+               <Location
+                  uuid = "75CA9249-BB35-4D09-BABD-03CD9BAFC089 - f6a6b96d46c350f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for API_Assinment_1.Network.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(from: Swift.String) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ClientApi/Network.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -341,6 +416,66 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "72"
                   endingLineNumber = "72"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "E3C23447-79B1-44BC-9568-7F4BFBCFFDDD - e343937d31f786c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for API_Assinment_1.ViewController.retrieveNationality() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  uuid = "E3C23447-79B1-44BC-9568-7F4BFBCFFDDD - 1dfa5757a98ae678"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for API_Assinment_1.ViewController.retrieveNationality() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "E3C23447-79B1-44BC-9568-7F4BFBCFFDDD - 718673ffced0c4c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for API_Assinment_1.ViewController.retrieveNationality() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "E3C23447-79B1-44BC-9568-7F4BFBCFFDDD - 396be3be8f43a3df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for API_Assinment_1.ViewController.retrieveNationality() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
                   offsetFromSymbolStart = "60">
                </Location>
             </Locations>
@@ -542,6 +677,51 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "102"
                   endingLineNumber = "102"
+                  offsetFromSymbolStart = "133">
+               </Location>
+               <Location
+                  uuid = "F2356B0D-4A65-42F0-A089-24CB52DCD8EF - 638a7c525026d9ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for API_Assinment_1.ViewController.retriveIpinfo() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "589">
+               </Location>
+               <Location
+                  uuid = "F2356B0D-4A65-42F0-A089-24CB52DCD8EF - ff7c078bb18137ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for API_Assinment_1.ViewController.retriveIpinfo() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "F2356B0D-4A65-42F0-A089-24CB52DCD8EF - ff7c078bb18137ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for API_Assinment_1.ViewController.retriveIpinfo() async -&gt; ()"
+                  moduleName = "API-Assinment-1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vmulugu/Documents/GitHub/API-Assinment_1/API-Assinment-1/API-Assinment-1/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
                   offsetFromSymbolStart = "133">
                </Location>
             </Locations>
