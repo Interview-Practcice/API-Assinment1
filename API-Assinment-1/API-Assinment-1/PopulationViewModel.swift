@@ -7,22 +7,22 @@
 
 import Foundation
 
-class Viewmodel : NSObject {
+class PopulationViewModel {
+    
     let urlPopulation = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
-
-    var population: Population!
+    
+    var population = Population()
+    
     func retrievePopulation() async {
         do {
-            //let model: Population = try await Network.shared.fetchData(from: urlPopulation)
             population =  try await Network.shared.fetchData(from: urlPopulation)
-            //tableView.reloadData()
-            print(population.source)
-            //            for model in model.country {
-            //                print(model)
-            //            }
         } catch {
             print("Error fetching data: \(error)")
         }
+    }
+    
+    var dataCount: Int {
+        return population.data.count
     }
 }
 

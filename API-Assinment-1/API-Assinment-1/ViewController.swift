@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var pop: Population!
+    var viewModel = PopulationViewModel()
     
     @IBOutlet weak var tableView: UITableView!
     let urlFact = "https://catfact.ninja/fact"
@@ -17,30 +17,30 @@ class ViewController: UIViewController {
     let urlNationality = "https://api.nationalize.io/?name=nathaniel"
     let urlPopulation = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
     let urlIpinfo = "https://ipinfo.io/161.185.160.93/geo"
-
-
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Population"
-        pop = Population()
         
-//        Task{
-//            await retrieveFactData()
-//        }
+        //        Task{
+        //            await retrieveFactData()
+        //        }
         
-//        Task{
-//            await retrieveActivityData()
-//        }
-//        Task{
-//            await retrieveNationality()
-//        }
+        //        Task{
+        //            await retrieveActivityData()
+        //        }
+        //        Task{
+        //            await retrieveNationality()
+        //        }
         Task{
-            await retrievePopulation()
+            await viewModel.retrievePopulation()
+            tableView.reloadData()
         }
-//        Task{
-//            await retriveIpinfo()
-//        }
+        //        Task{
+        //            await retriveIpinfo()
+        //        }
         
         
     }
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     
     
     func retrieveNationality() async {
-       
+        
         do {
             let model: Nationality = try await Network.shared.fetchData(from: urlNationality)
             print(model.count)
@@ -80,30 +80,26 @@ class ViewController: UIViewController {
         }
     }
     
-    func retrievePopulation() async {
-       
-        do {
-            //let model: Population = try await Network.shared.fetchData(from: urlPopulation)
-            pop =  try await Network.shared.fetchData(from: urlPopulation)
-            tableView.reloadData()
-            print(pop.source)
-//            for model in model.country {
-//                print(model)
-//            }
-        } catch {
-            print("Error fetching data: \(error)")
-        }
-    }
+    //    func retrievePopulation() async {
+    //
+    //        do {
+    //            //let model: Population = try await Network.shared.fetchData(from: urlPopulation)
+    //           // pop =  try await Network.shared.fetchData(from: urlPopulation)
+    //            //tableView.reloadData()
+    //        } catch {
+    //            print("Error fetching data: \(error)")
+    //        }
+    //    }
     
     func retriveIpinfo() async {
-
+        
         do {
             let model: IPinfo = try await Network.shared.fetchData(from: urlIpinfo)
             print(model.ip)
         } catch{
             
         }
-
+        
     }
     
 }
@@ -111,18 +107,18 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pop.data.count
+        return viewModel.dataCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-       // let cell = UITableViewCell()
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
-
-        let idNation = pop.data[indexPath.row]
+        
+        let idNation = viewModel.population.data[indexPath.row]
+        
         cell.textLabel?.text = idNation.idNation
         cell.detailTextLabel?.text = idNation.nation
-
+        
         return cell
     }
     

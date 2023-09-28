@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09730FDE2ABCBA0F00104A98 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09730FDC2ABCBA0F00104A98 /* Model.xcdatamodeld */; };
-		09730FE02ABCBDF600104A98 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09730FDF2ABCBDF600104A98 /* ViewModel.swift */; };
+		09730FE02ABCBDF600104A98 /* PopulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09730FDF2ABCBDF600104A98 /* PopulationViewModel.swift */; };
 		09ED451B2A97F4C200002ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ED451A2A97F4C200002ABB /* AppDelegate.swift */; };
 		09ED451D2A97F4C200002ABB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ED451C2A97F4C200002ABB /* SceneDelegate.swift */; };
 		09ED451F2A97F4C200002ABB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ED451E2A97F4C200002ABB /* ViewController.swift */; };
@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		09730FDD2ABCBA0F00104A98 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		09730FDF2ABCBDF600104A98 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		09730FDF2ABCBDF600104A98 /* PopulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewModel.swift; sourceTree = "<group>"; };
 		09ED45172A97F4C200002ABB /* API-Assinment-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "API-Assinment-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ED451A2A97F4C200002ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09ED451C2A97F4C200002ABB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				09ED451A2A97F4C200002ABB /* AppDelegate.swift */,
 				09ED451C2A97F4C200002ABB /* SceneDelegate.swift */,
 				09ED451E2A97F4C200002ABB /* ViewController.swift */,
-				09730FDF2ABCBDF600104A98 /* ViewModel.swift */,
+				09730FDF2ABCBDF600104A98 /* PopulationViewModel.swift */,
 				09ED45512A984C3600002ABB /* ClientApi */,
 				09ED454E2A984BAA00002ABB /* Model */,
 				09ED45202A97F4C200002ABB /* Main.storyboard */,
@@ -301,7 +301,7 @@
 				09ED45502A984BB900002ABB /* Activity.swift in Sources */,
 				09ED45532A984D2400002ABB /* Nationality.swift in Sources */,
 				09ED454D2A9845D600002ABB /* Network.swift in Sources */,
-				09730FE02ABCBDF600104A98 /* ViewModel.swift in Sources */,
+				09730FE02ABCBDF600104A98 /* PopulationViewModel.swift in Sources */,
 				09ED45572A98638800002ABB /* IPinfo.swift in Sources */,
 				09ED454B2A97F4E200002ABB /* Fact.swift in Sources */,
 				09ED451F2A97F4C200002ABB /* ViewController.swift in Sources */,
