@@ -12,95 +12,24 @@ class ViewController: UIViewController {
     var viewModel = PopulationViewModel()
     
     @IBOutlet weak var tableView: UITableView!
-    let urlFact = "https://catfact.ninja/fact"
-    let urlActivity = "https://www.boredapi.com/api/activity"
-    let urlNationality = "https://api.nationalize.io/?name=nathaniel"
-    let urlPopulation = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
-    let urlIpinfo = "https://ipinfo.io/161.185.160.93/geo"
-    
-    
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Population"
+        //configureSearchBar()
         
-        //        Task{
-        //            await retrieveFactData()
-        //        }
-        
-        //        Task{
-        //            await retrieveActivityData()
-        //        }
-        //        Task{
-        //            await retrieveNationality()
-        //        }
         Task{
             await viewModel.retrievePopulation()
             tableView.reloadData()
         }
-        //        Task{
-        //            await retriveIpinfo()
-        //        }
-        
         
     }
-    
-    func retrieveFactData() async {
-        do {
-            let model: Fact = try await Network.shared.fetchData(from: urlFact)
-            print(model.fact)
-            print(model.length)
-        } catch {
-            print("Error fetching data: \(error)")
-        }
-    }
-    
-    func retrieveActivityData() async {
-        
-        do {
-            let model: Activity = try await Network.shared.fetchData(from: urlActivity)
-            print(model.activity)
-            print(model.participants)
-        } catch {
-            print("Error fetching data: \(error)")
-        }
-    }
-    
-    
-    func retrieveNationality() async {
-        
-        do {
-            let model: Nationality = try await Network.shared.fetchData(from: urlNationality)
-            print(model.count)
-            for model in model.country {
-                print(model)
-            }
-        } catch {
-            print("Error fetching data: \(error)")
-        }
-    }
-    
-    //    func retrievePopulation() async {
-    //
-    //        do {
-    //            //let model: Population = try await Network.shared.fetchData(from: urlPopulation)
-    //           // pop =  try await Network.shared.fetchData(from: urlPopulation)
-    //            //tableView.reloadData()
-    //        } catch {
-    //            print("Error fetching data: \(error)")
-    //        }
-    //    }
-    
-    func retriveIpinfo() async {
-        
-        do {
-            let model: IPinfo = try await Network.shared.fetchData(from: urlIpinfo)
-            print(model.ip)
-        } catch{
-            
-        }
-        
-    }
+    // Configure the search bar
+//    private func configureSearchBar() {
+//        // searchBar.delegate = self
+//        searchBar.placeholder = "Search"
+//    }
     
 }
 
@@ -118,7 +47,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.textLabel?.text = data.idNation
         cell.detailTextLabel?.text = data.nation
-        
+        cell.imageView?.image = UIImage(systemName: "person.circle")
         return cell
     }
     
@@ -127,11 +56,41 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailsViewController;
         let data = viewModel.population.data[indexPath.row]
-
+        
         vc?.idNationStr = data.idNation
         vc?.nationStr = data.nation
         navigationController?.pushViewController(vc!, animated: true)
     }
     
 }
-
+/*
+ extension ViewController: UISearchBarDelegate {
+ 
+ func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+ filterSchools(for: searchText)
+ 
+ }
+ 
+ func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+ searchBar.text = ""
+ filterSchools(for: "")
+ 
+ }
+ 
+ var isSearching: Bool {
+ return searchBar.text != ""
+ }
+ 
+ func filterSchools(for searchText: String) {
+ if searchText.isEmpty {
+ viewModel.filteredpopulation = viewModel.population
+ } else {
+ viewModel.filteredpopulation = viewModel.population.filter {
+ $0.schoolName.lowercased().contains(searchText.lowercased()) || $0.dbn.lowercased().contains(searchText.lowercased())
+ }
+ }
+ updateTableView()
+ }
+ 
+ }
+ */

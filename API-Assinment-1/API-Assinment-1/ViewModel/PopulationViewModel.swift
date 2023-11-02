@@ -12,7 +12,7 @@ class PopulationViewModel {
     let urlPopulation = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
     
     var population = Population()
-    
+   // var filteredpopulation: [Population] = []
     func retrievePopulation() async {
         do {
             population =  try await Network.shared.fetchData(from: urlPopulation)

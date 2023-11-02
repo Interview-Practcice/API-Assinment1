@@ -12,11 +12,7 @@ struct Fact: Codable {
     var length: Int
     
 }
-// MARK: - Fact
-//struct Fact: Codable {
-//    let fact: String
-//    let length: Int
-//}
+
 
 
 /*
